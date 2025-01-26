@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/faiss_db:/app/faiss_db
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    networks:
+      - chatbot-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    networks:
+      - chatbot-network
+    environment:
+      - BACKEND_URL=http://backend:8000
+
+networks:
+  chatbot-network:
+    driver: bridge
