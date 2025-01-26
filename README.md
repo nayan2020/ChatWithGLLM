@@ -33,6 +33,7 @@ This structure ensures clarity and maintainability, as well as easy deployment w
 `uvicorn backend.gpt_server:app --host 0.0.0.0 --port 8080 --reload` 
 
 Your local file structure will be:
+```bash
 .
 ├── backend
 │   ├── gpt_server.py             # Main FastAPI server
@@ -52,3 +53,4 @@ Your local file structure will be:
 ├── .env                          # Environment variables (API keys)
 ├── .gitignore                    # Ignore sensitive/unnecessary files
 ├── README.md                     # Project documentation
+```
