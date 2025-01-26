@@ -41,7 +41,7 @@ Your local file structure will be:
 │   │   ├── database.py           # Handles FAISS database interactions
 │   │   ├── messages.py           # Processes and structures chat messages
 │   │   ├── logging_config.py     # Configures backend logging
-|   |   ├──config.py              # Configures backend .env and db path
+│   │   ├──config.py              # Configures backend .env and db path
 │   ├── requirements.txt          # Backend dependencies
 │   ├── faiss_db/                 # FAISS database storage
 │
