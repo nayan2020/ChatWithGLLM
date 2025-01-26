@@ -25,13 +25,14 @@ To run the application using Docker:
 docker-compose build
 docker-compose up
 
----
+```
 
 This structure ensures clarity and maintainability, as well as easy deployment with Docker. Let me know if you need further explanations or adjustments!
 
 ## Advance USER
-`uvicorn backend.gpt_server:app --host 0.0.0.0 --port 8080 --reload'
+`uvicorn backend.gpt_server:app --host 0.0.0.0 --port 8080 --reload`
 
+Your local file structure will be:
 .
 ├── backend
 │   ├── gpt_server.py             # Main FastAPI server
